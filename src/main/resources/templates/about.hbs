@@ -1,37 +1,40 @@
 {{#partial "content"}}
-    <div >
-        <img class="topimage" src="https://www.eu-startups.com/wp-content/uploads/2018/06/health-startups.png">
+    <div>
+    <div class="head">
+       <div class="topimage" ><img   src="Yoga-PNG-Clipart (1).png" ></div>
+        <h1 id="h1" style="position:relative;bottom:37%;right:35%">About us</h1>
     </div>
-<h1>About us</h1>
+
+    </div>
    <div class="adjectives">
-  <p>Professional.Specific .Descriptive </p>
+  <p id="p">Professional.Specific .Descriptive </p>
    </div>
 <div class="team">
-    <h3>Team For Your Care</h3>
-    <p>We ensure individualized and personal care that puts your needs and expectations first,<br> and that starts with a one-on-one consultation in our office.</p>
+    <h3 id="h3">Team For Your Care</h3>
+    <p id="p">We ensure individualized and personal care that puts your needs and expectations first,<br> and that starts with a one-on-one consultation in our office.</p>
 </div><br><br>
     <div class="row">
         <div class="col col-2" style="width:350px">
             <img src="hono.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Honorine Niyonkuru</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">The team leader, the back end developer and also the master mind behind the project ideas.</p>
                 <a href="#" ><button>FIND OUT MORE</button></a>
             </div>
         </div>
             <div class="col col-md-2" style="width:350px">
-            <img src="" class="card-img-top" alt="...">
+            <img id="image" src="IMG_3820.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Amandine Karambizi</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text"> The front and the backend developer in charge of content, the home page and the website theme.</p>
                 <a href="#" ><button>FIND OUT MORE</button></a>
             </div>
             </div>
             <div class="col col-md-2" style="width:350px">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="kimba.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Kimbagira Sylvie</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">The front and the backend developer in charge of the awareness page design and it content</p>
                 <a href="#" ><button>FIND OUT MORE</button></a>
             </div>
             </div>
@@ -40,46 +43,91 @@
                 <img src="ray.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Raissa Muyenzi</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">The front and back end developer in charge of the about us page and our networking.</p>
                     <a href="#" ><button>FIND OUT MORE</button></a>
                 </div>
             </div>
 
             <div class="col col-md-2" style="width:350px">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="nico.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Nice Nicole</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">The front and back end developer in charge of the details pages about every diseases .</p>
                     <a href="#" ><button>FIND OUT MORE</button></a>
                 </div>
             </div>
 
+    </div><br>
+    <div class="contact">
+        <span>Email us with ease</span><br><br>
+        <h2>Get in touch</h2><br>
+        <p>Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital.</p>
     </div>
 
 
     <style>
+    .head{
+        background-image: linear-gradient(to right top, #ccdcf8, #dce4fa, #eaecfb, #f5f5fd, #ffffff);
+         height:300px;
+          width:100%;
+          }
     .topimage{
-     height:330px;
-     width:100%;
+     height:300px;
+<!--     margin-left:10%;-->
+     width:300px;
+<!--     opacity:0.9;-->
      }
-        .row ,.team , .adjectives{
+<!--     h1{-->
+<!--       margin-left:10%;-->
+<!--       }-->
+        .row {
         margin-left:10%;
         }
        h3{
        color:#8E44AD  ;
        }
        button{
-        background-color:#6C3483 ;
+        background-color:#202020;
         color:white;
         border-radius:50px;
         height:50px;
         padding:15px;
         width:200px;
+        border: none;
        }
-       img {
+      .card-img-top {
         height:300px;
-
      }
+     .card-body{
+     background-color:#ccccFF;
+     }
+
+      .topimage{
+      padding-top:0;
+      padding-left:1400px;
+
+      }
+      .topimage>img{
+      width:400px;
+      height:330px;
+      opacity:0.4;
+      }
+      #h1,#p,#h3{
+      text-align:center;
+      }
+
+      #h1 {
+
+      }
+      .contact{
+      background-image: linear-gradient(to right, #e3c9e7, #e4c0e9, #e5adec,#e4b6eb , #e3c9e7);
+      height:400px;
+      width:100%;
+      text-align:center;
+      }
+      button:focus {
+        outline: none;
+      }
     </style>
 {{/partial}}
 {{>layout.hbs}}
