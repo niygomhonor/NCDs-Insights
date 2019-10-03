@@ -48,6 +48,10 @@ public class App {
             model.put("allComments", commentDao.getAll());
             return new ModelAndView(model, "comments.hbs");
         }, new HandlebarsTemplateEngine());
+        get("/services", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
 
+            return new ModelAndView(model, "services.hbs");
+        }, new HandlebarsTemplateEngine());
     }
 }
