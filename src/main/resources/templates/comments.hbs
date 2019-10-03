@@ -1,0 +1,23 @@
+{{#partial "content"}}
+
+    <div class="container">
+
+        <div class="jumbotron" style="width:50%">
+            <h1 class="display-4"></h1>
+            {{#if allComments}}
+                {{#each allComments}}
+                    <p><strong>{{name}}</strong></p>
+
+                    <pre class="lead">{{message}}</pre>
+
+                    <hr class="my-4">
+                {{/each}}
+            {{else}}
+            {{/if}}
+            <p></p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Give your FeedBack</a>
+        </div>
+    </div>
+
+{{/partial}}
+{{> layout.hbs}}
