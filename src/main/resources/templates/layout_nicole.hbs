@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
-    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Lora|Old+Standard+TT|Source+Serif+Pro|Vollkorn&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|EB+Garamond|Lora|Montserrat+Alternates|Old+Standard+TT|Source+Serif+Pro|Vollkorn&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+          rel="stylesheet">
+
+<!--    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Lora|Old+Standard+TT|Source+Serif+Pro|Vollkorn&display=swap" rel="stylesheet">-->
+<!--    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|EB+Garamond|Lora|Montserrat+Alternates|Old+Standard+TT|Source+Serif+Pro|Vollkorn&display=swap" rel="stylesheet">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
         .bdy{
@@ -76,11 +79,80 @@
         }
         </style>
 </head>
-<body>
-<ul class="nav nav-tabs">
-    <li role="presentation"><a href="/">Services</a></li>
 
-</ul>
+<div style="display:flex;flex-direction:row;justify-content:space-around">
+    <a class="navbar-brand" href="#"><img src="/images/ncdsLogo.png" height="100" width="100" alt="Ncds-logo"></a>
+
+    <p><img src="/images/icons8-iphone-64.png" style="margin-top:25px" height="50"><br>+2507309838
+    </p>
+
+    <p><img src="/images/icons8-map-pinpoint-64.png" style="margin-top:25px" height="50"><br>Rwanda,Kigali</p>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/about" id="navbarDropdown" style="font-family: 'Cormorant Garamond', serif;">ABOUT</a>
+                <!--                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+                <!--                        <a class="dropdown-item" href="/about">Add Department</a>-->
+
+                <!--                        <div class="dropdown-divider"></div>-->
+                <!--                        <a class="dropdown-item" href="/departments">View Departments</a>-->
+                <!--                    </div>-->
+            </li>
+<!--            <li class="nav-item dropdown">-->
+<!--                <a class="nav-link " href="/awareness" id="navbarDropdown" role="button" data-toggle="dropdown"-->
+<!--                   aria-haspopup="true" aria-expanded="false" style="font-family: 'Cormorant Garamond', serif;">-->
+<!--                    AWARENESS-->
+<!--                </a>-->
+<!--                <div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+<!--                    <a class="dropdown-item" href="/diabetes_type_one">Diabetes-type-1</a>-->
+<!--                    <a class="dropdown-item" href="/diabetes_type_one">Diabetes-type-2</a>-->
+<!--                    <a class="dropdown-item" href="/">Heart</a>-->
+<!--                    <a class="dropdown-item" href="/diabetes_type_one">Diabetes-type-2</a>-->
+<!--                    <a class="dropdown-item" href="/diabetes_type_one">Diabetes-type-2</a>-->
+<!--                </div>-->
+<!--            </li>-->
+            <li class="nav-item">
+                <a class="nav-link" href="/" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false" style="font-family: 'Cormorant Garamond', serif;">AWARENESS</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/services/diabetes">Diabetes</a>
+                    <a class="dropdown-item" href="/services/cardio">Heart</a>
+                    <a class="dropdown-item" href="/services/kidney">Kidney</a>
+                    <a class="dropdown-item" href="/services/mental">Mental diseases</a>
+
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false" style="font-family: 'Cormorant Garamond', serif;">NEWS</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="sport">Sports & Diets</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/heartsol">Heart</a>
+                    <a class="dropdown-item" href="/kidneysol">Kidney</a>
+                    <a class="dropdown-item" href="/diabetesol">Diabetes</a>
+                    <a class="dropdown-item" href="/mentalsol">Mental diseases</a>
+                    <a class="dropdown-item" href="/user/new"> </a>
+
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/comments">Comments</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<body>
 <div>
     <!--begin main template-->
 {{!--     <div class="page-header"> --}}
@@ -89,16 +161,125 @@
 
     <div class="col-md-12">
         {{#block "content"}}
+
         {{/block}}
 
     </div>
 </div>
-<!--end main template-->
 {{#block "footer"}}
+    <footer class="page-footer font-small unique-color-dark" style="background-color:#000215">
+
+        <div style="background-color: #520B73;border-radius:30px; width:60%;margin-left:250px">
+            <div class="container">
+
+                <!-- Grid row-->
+                <div class="row py-4 d-flex align-items-center">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0" style="color:white">Get connected with us on social networks!</h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                        <!-- Facebook -->
+                        <a class="fb-ic" style="color:white">
+                            <i class="fab fa-facebook-f white-text mr-4"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="tw-ic" style="color:white">
+                            <i class="fab fa-twitter white-text mr-4"> </i>
+                        </a>
+                        <!-- Google +-->
+                        <a class="gplus-ic" style="color:white">
+                            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+                        </a>
+                        <!--Linkedin -->
+                        <a class="li-ic" style="color:white">
+                            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic" style="color:white">
+                            <i class="fab fa-instagram white-text"> </i>
+                        </a>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row-->
+
+            </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left mt-5">
+
+            <!-- Grid row -->
+            <div class="row mt-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+
+                    <!-- Footer -->
+                    <!-- Content -->
+                    <h6 class="text-uppercase font-weight-bold" style="font-family: 'Cormorant Garamond', serif;color:white">NCDs-Insights</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p style="font-family: 'Cormorant Garamond', serif; color:white">Be aware of Non-Communicable Diseases</p>
+
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold" style="font-family: 'Cormorant Garamond', serif;color:white">NCDs links</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="https://en.wikipedia.org/wiki/Non-communicable_disease" style="font-family: 'Cormorant Garamond', serif;color:white">NCDs WiKi</a>
+                    </p>
+                    <p>
+                        <a href="https://www.who.int/news-room/fact-sheets/detail/noncommunicable-diseases" style="color:white">NCDs WHO</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold" style="font-family: 'Cormorant Garamond', serif;color:white">Contact Us</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fas fa-home mr-3" style="color:white"> Kigali, Gasabo</i></p>
+                    <p>
+                        <i class="fas fa-envelope mr-3" style="color:white "> niygomhonor@gmail.com</i></p>
+                    <p> <i class="fas fa-envelope mr-3" style="color:white"> karambizig@gmail.com</i></p>
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <a href="/"> NCDs-Insights</a>
+        </div>
+        <!-- Copyright -->
+
+        <!-- Footer -->
+    </footer>
+{{/block}}
+
 
     </body>
 
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </html>
-{{/block}}
+
