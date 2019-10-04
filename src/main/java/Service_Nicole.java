@@ -27,7 +27,7 @@ public class Service_Nicole {
 
         get("/diabetes_type_two", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
-            return new ModelAndView(model, "diabetes.hbs");
+            return new ModelAndView(model, "diabetes-nic.hbs");
         }, new HandlebarsTemplateEngine());
 
         get("/detail5", (req, res) -> {
