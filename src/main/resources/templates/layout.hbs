@@ -1,93 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
-    <!DOCTYPE html>
-    <html lang="en" dir="ltr">
-
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{{#block "title"}}NEODO-API<{{/block}}/title>
-        {{#block "links"}}
-            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-            <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-            <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.3/css/mdb.min.css" rel="stylesheet">
-            <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
-            <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-bootstrap/0.5pre/assets/css/bootstrap.min.css">
-            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.5/js/mdb.min.js"></script>
-            <link rel="stylesheet" href="/css/styles.css" type="text/css">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{#block "title"}}NCDs<{{/block}}/title>
+    {{#block "links"}}
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+              rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.3/css/mdb.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-bootstrap/0.5pre/assets/css/bootstrap.min.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript"
+                src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <script type="text/javascript"
+                src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript"
+                src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.5/js/mdb.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/styles.css" type="text/css">
 
         <link rel="stylesheet" href="/css/styles.css" type="text/css">
-{{/block}}
+    {{/block}}
 </head>
 <!--<a class="navbar-brand" href="#"><img src="/images/ncdsLogo.png" height="100" width="100" style="margin-left:100px" alt="Ncds-logo"></a>-->
 <div style="display:flex;flex-direction:row;justify-content:space-around">
-    <a class="navbar-brand" href="#"><img src="/images/ncdsLogo.png" height="100" width="100"   alt="Ncds-logo"></a>
+    <a class="navbar-brand" href="#"><img src="/images/ncdsLogo.png" height="100" width="100" alt="Ncds-logo"></a>
 
-    <p><img src="/images/icons8-iphone-64.png" style="margin-top:25px" height="50">Contact Us<br>555555555555555</p>
+    <p><img src="/images/icons8-iphone-64.png" style="margin-top:25px" height="50">Contact Us<br>+2507309838
+    </p>
 
-    <p><img src="/images/icons8-map-pinpoint-64.png"  style="margin-top:25px" height="50">Visit Us</p>
+    <p><img src="/images/icons8-map-pinpoint-64.png" style="margin-top:25px" height="50">Visit Us<br>Rwanda,Kigali</p>
 </div>
 <nav class="navbar navbar-expand-lg navbar-light">
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link dropdown-toggle" href="/about" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/about">Add Department</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/about" id="navbarDropdown" style="font-family: 'Cormorant Garamond', serif;">ABOUT</a>
+                <!--                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+                <!--                        <a class="dropdown-item" href="/about">Add Department</a>-->
 
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="/departments">View Departments</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="/news" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        News
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <!--                        <div class="dropdown-divider"></div>-->
+                <!--                        <a class="dropdown-item" href="/departments">View Departments</a>-->
+                <!--                    </div>-->
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link " href="/awareness" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false" style="font-family: 'Cormorant Garamond', serif;">
+                    AWARENESS
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/diabetes_type_one">Diabetes-type-1</a>
+                    <a class="dropdown-item" href="/diabetes_type_one">Diabetes-type-2</a>
+                    <a class="dropdown-item" href="/">Heart</a>
+                    <a class="dropdown-item" href="/diabetes_type_one">Diabetes-type-2</a>
+                    <a class="dropdown-item" href="/diabetes_type_one">Diabetes-type-2</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/service" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false" style="font-family: 'Cormorant Garamond', serif;">SERVICES</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/services/diabetes">Diabetes</a>
+                    <a class="dropdown-item" href="/services/cardio">Heart</a>
+                    <a class="dropdown-item" href="/services/kidney">Kidney</a>
+                    <a class="dropdown-item" href="/services/mental">Mental diseases</a>
 
-                        <a class="dropdown-item" href="/news">View Posts</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link dropdown-toggle" href="/user" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/user/new">Add User</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/user" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false" style="font-family: 'Cormorant Garamond', serif;">NEWS</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="sport">Sports & Diets</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/heartsol">Heart</a>
+                    <a class="dropdown-item" href="/kidneysol">Kidney</a>
+                    <a class="dropdown-item" href="/diabetesol">Diabetes</a>
+                    <a class="dropdown-item" href="/mentalsol">Mental diseases</a>
+                    <a class="dropdown-item" href="/user/new"> </a>
 
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="/users">View users</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/user" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">NEWS</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/user/new">Add User</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/comments">Comments</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
 
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="/comments">Comments</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
+<body>
+{{#block "content"}}
 
-    <body>
-    {{#block "content"}}
+{{/block}}
 
-    {{/block}}
+{{#block "footer"}}
+    <footer class="page-footer font-small unique-color-dark" style="background-color:#620A8B">
 
-    {{#block "footer"}}
-    <footer class="page-footer font-small unique-color-dark">
-
-        <div style="background-color: #4B0082;border-radius:30px; width:60%;margin-left:250px">
+        <div style="background-color: #520B73;border-radius:30px; width:60%;margin-left:250px">
             <div class="container">
 
                 <!-- Grid row-->
@@ -133,105 +153,67 @@
         </div>
 
         <!-- Footer Links -->
-    <div class="container text-center text-md-left mt-5">
+        <div class="container text-center text-md-left mt-5">
 
-        <!-- Grid row -->
-    <div class="row mt-3">
+            <!-- Grid row -->
+            <div class="row mt-3">
 
-        <!-- Grid column -->
-    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 
 
-            <!-- Footer -->
-            <!-- Content -->
-            <h6 class="text-uppercase font-weight-bold">Company name</h6>
-            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-            <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-                consectetur
-                adipisicing elit.</p>
+                    <!-- Footer -->
+                    <!-- Content -->
+                    <h6 class="text-uppercase font-weight-bold" style="font-family: 'Cormorant Garamond', serif;">NCDs-Insights</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p style="font-family: 'Cormorant Garamond', serif;">Be aware of Non-Communicable Diseases</p>
 
-        </div>
-            <!-- Grid column -->
+                </div>
 
-            <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
 
-                <!-- Links -->
-                <h6 class="text-uppercase font-weight-bold">Products</h6>
-                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p>
-                    <a href="#!">MDBootstrap</a>
-                </p>
-                <p>
-                    <a href="#!">MDWordPress</a>
-                </p>
-                <p>
-                    <a href="#!">BrandFlow</a>
-                </p>
-                <p>
-                    <a href="#!">Bootstrap Angular</a>
-                </p>
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold" style="font-family: 'Cormorant Garamond', serif;">NCDs links</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="https://en.wikipedia.org/wiki/Non-communicable_disease" style="font-family: 'Cormorant Garamond', serif;">NCDs WiKi</a>
+                    </p>
+                    <p>
+                        <a href="https://www.who.int/news-room/fact-sheets/detail/noncommunicable-diseases">NCDs WHO</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
 
-            </div>
-            <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
 
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-
-                <!-- Links -->
-                <h6 class="text-uppercase font-weight-bold">Useful links</h6>
-                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p>
-                    <a href="#!">Your Account</a>
-                </p>
-                <p>
-                    <a href="#!">Become an Affiliate</a>
-                </p>
-                <p>
-                    <a href="#!">Shipping Rates</a>
-                </p>
-                <p>
-                    <a href="#!">Help</a>
-                </p>
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold" style="font-family: 'Cormorant Garamond', serif;">Contact Us</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fas fa-home mr-3"> Kigali, Gasabo</i></p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"> niygomhonor@gmail.com</i></p>
+                       <p> <i class="fas fa-envelope mr-3"> karambizig@gmail.com</i></p>
+                </div>
+                <!-- Grid column -->
 
             </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-
-                <!-- Links -->
-                <h6 class="text-uppercase font-weight-bold">Contact</h6>
-                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p>
-                    <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-                <p>
-                    <i class="fas fa-envelope mr-3"></i> info@example.com</p>
-                <p>
-                    <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-                <p>
-                    <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
-
-            </div>
-            <!-- Grid column -->
-
-        </div>
             <!-- Grid row -->
 
         </div>
-            <!-- Footer Links -->
+        <!-- Footer Links -->
 
-            <!-- Copyright -->
-            <div class="footer-copyright text-center py-3">© 2018 Copyright:
-                <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
-            </div>
-            <!-- Copyright -->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/"> NCDs-Insights</a>
+        </div>
+        <!-- Copyright -->
 
-            <!-- Footer -->
-
+        <!-- Footer -->
     </footer>
-    {{/block}}
+{{/block}}
 
-    </body>
+</body>
 
-    </html>
+</html>

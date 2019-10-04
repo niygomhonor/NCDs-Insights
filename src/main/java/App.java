@@ -87,7 +87,58 @@ public class App {
 
             return new ModelAndView(model, "about.hbs");
         }, new HandlebarsTemplateEngine());
-//
+
+        get("/", (req, res) -> {
+            Map<String, Object> model = new HashMap<>();
+            return new ModelAndView(model, "home.hbs");
+        }, new HandlebarsTemplateEngine());
+
+
+        get("/heartsol", (req, res) -> {
+            Map<String, Object> model = new HashMap<>();
+
+
+            return new ModelAndView(model, "solutions.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        get("/diabetesol", (req, res) -> {
+            Map<String, Object> model = new HashMap<>();
+
+
+            return new ModelAndView(model, "solution2.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        get("/kidneysol", (req, res) -> {
+            Map<String, Object> model = new HashMap<>();
+
+
+            return new ModelAndView(model, "solutions3.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        get("/mentalsol", (req, res) -> {
+            Map<String, Object> model = new HashMap<>();
+            return new ModelAndView(model, "solutions4.hbs");
+        }, new HandlebarsTemplateEngine());
+
+          get("/services/cardio", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            return new ModelAndView(model, "cardiovascular_diseases.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        get("/services/kidney", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            return new ModelAndView(model, "chronic_kidney_disease.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        get("/services/mental", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            return new ModelAndView(model, "mental_condition.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        get("/services/diabetes", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            return new ModelAndView(model, "diabetes.hbs");
+        }, new HandlebarsTemplateEngine());
 
     }
 }

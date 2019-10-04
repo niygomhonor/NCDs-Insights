@@ -1,6 +1,6 @@
 #newh{
 background-image: linear-gradient(to right, #dcdcdc, #e5e5e5, #ededed, #f6f6f6, #ffffff);
-height:750px;
+height:550px;
 width:100%;
 }
 #ima{
@@ -51,7 +51,7 @@ height:100px;
 text-align:center;
 position:relative;
 left:13%;
-top:0%;
+top:-10%;
 }
 #n{
 padding-top:30px;
